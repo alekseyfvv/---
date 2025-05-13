@@ -4,7 +4,7 @@ bot = telebot.TeleBot('ТВОЙ ТОКЕН')
 
 @bot.message_handler(commands=['start'])
 def startmsg(msg):
-    bot.reply_to(msg, "Hey there, I'm a bot made by pyTelegramBotAPI!")
+    bot.reply_to(msg, "Привет, я телеграм-бот который даёт советы по сортировке мусора, команды advice_on_sorting_garbage:an_ordinary_trash_can и advice_on_sorting_garbage:another_way")
 
 @bot.message_handler(commands=['advice_on_sorting_garbage:an_ordinary_trash_can'])
 def send_mem(msg):
